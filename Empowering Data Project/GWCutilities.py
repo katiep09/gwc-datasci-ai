@@ -1,5 +1,3 @@
-
-
 def vformat_list(in_list):
   return_str =""
   columns = 3
