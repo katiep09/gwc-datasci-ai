@@ -1,6 +1,3 @@
-#Talking Data Starter Code
-
-#Part 2 Setting up the program
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -13,12 +10,10 @@ favMovie = "McFarland USA"
 print("My favorite movie is "+favMovie)
 
 
-#Part 3 Investigate the data
 #print(movieData.head())
 #print(movieData["movie_title"])
 
 
-#Part 4 Filter data
 print("\nThe data for my favorite movie is:\n")
 #Create a new variable to store your favorite movie information
 favMovieBooleanList = movieData["movie_title"] == favMovie
@@ -46,8 +41,7 @@ print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
 input("Press enter to see more information about how " + favMovie +
       " compares to other movies in this genre.\n")
 
-#Part 5 Describe data
-#min
+#find min
 min = dramaMovieData["audience_rating"].min()
 print("The min audience rating of the data set is: " + str(min))
 print(favMovie + " is rated 84 points higher than the lowest rated movie.")
